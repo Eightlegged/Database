@@ -57,10 +57,10 @@ CREATE TABLE `MEETING_SERV` (
 	`MT_NAME`         VARCHAR(100) NOT NULL,
 	`MT_CONTENT`      TEXT         NULL,
 	`MT_DATE`         DATE         NOT NULL,
-	`MT_RESERVE_TIME` DATE         NULL,
+	`MT_RESERVE_TIME` TIME         NULL,
 	`MT_RESERVE_MSG`  VARCHAR(500) NULL,
-	`MT_ST_TIME`      DATE         NOT NULL,
-	`MT_FN_TIME`      DATE         NOT NULL,
+	`MT_ST_TIME`      TIME         NOT NULL,
+	`MT_FN_TIME`      TIME         NOT NULL,
 	`MT_COMMENT`      VARCHAR(500) NULL
 );
 
