@@ -7,7 +7,7 @@ password = 1234
 (일단 Root에서 DBA권한으로 작업하는게 좋을 것 같습니다.)
 
 <Schema 생성 및 Insert DB 생성> - mySQL WorkBench에서 작업
-1. base_info / analysis_info Schema 생성
+1. base_info(유저서비스, 기본회의정보) / analysis_info(회의분석결과정보) Schema 생성 (해당 파트 DB만 생성)
 2. base_info에 mySQL_BASE_INFO_SQL.txt의 Query문 실행.
 3. analysis_info에 mySQL_ANALYSIS_INFO_SQL.txt의 Query문 실행.
 4. mySQL_BASE_DATA / mySQL_ANALYSIS_DATA Query 실행.
