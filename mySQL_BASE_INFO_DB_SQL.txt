@@ -157,3 +157,32 @@ ALTER TABLE `SURVEY_INFO`
 			`MEETING_ID`
 		);
 
+INSERT INTO base_info.team_info(TEAM_ID, TEAM_INFO) values('TEST','팀 정보입니다.');
+INSERT INTO base_info.team_info(TEAM_ID, TEAM_INFO) values('하이테크정보화개발팀');
+INSERT INTO base_info.team_info(TEAM_ID) values('미디어사업팀');
+INSERT INTO base_info.team_info(TEAM_ID) values('클라우드기술팀');
+INSERT INTO base_info.team_info(TEAM_ID) values('클라우드플랫폼팀');
+INSERT INTO base_info.team_info(TEAM_ID) values('제조인프라사업팀');
+INSERT INTO base_info.team_info(TEAM_ID) values('에이브릴플랫폼팀');
+INSERT INTO base_info.team_info(TEAM_ID) values('테스트팀');
+
+INSERT INTO base_info.part_info(PART_ID, TEAM_ID) values('R&D','하이테크정보화개발팀');
+INSERT INTO base_info.part_info(PART_ID, TEAM_ID) values('테스트파트','테스트팀');
+INSERT INTO base_info.part_info(PART_ID, TEAM_ID) values('Softlayer','클라우드기술팀');
+INSERT INTO base_info.part_info(PART_ID, TEAM_ID) values('Bluemix','클라우드플랫폼팀');
+
+INSERT INTO base_info.user_info(USER_ID, USER_NAME, USER_POSITION, USER_PW, USER_AUTH) values('TEST','홍길동','팀장','1234', '1');
+INSERT INTO base_info.user_info(USER_ID, USER_NAME, USER_POSITION, USER_PW, USER_AUTH) values('ABCDE','가나다','선임','1234', '2');
+INSERT INTO base_info.user_info(USER_ID, USER_NAME, USER_POSITION, USER_PW, USER_AUTH) values('ABC','박정익','선임','1234', '2');
+INSERT INTO base_info.user_info(USER_ID, USER_NAME, USER_POSITION, USER_PW, USER_AUTH) values('A1234','장희식','수석','1234', '2');
+
+INSERT INTO base_info.meeting_serv(meeting_id, mt_name, mt_date, mt_st_time, mt_fn_time) values('MT1','주간보고', '2017-08-06', '08:00:00', '12:00:00');
+INSERT INTO base_info.meeting_serv(meeting_id, mt_name, mt_date, mt_st_time, mt_fn_time) values('MT2','성과보고', '2017-08-06', '12:00:00', '13:00:00');
+INSERT INTO base_info.meeting_serv(meeting_id, mt_name, mt_date, mt_st_time, mt_fn_time) values('MT3','임시회의', '2017-08-06', '14:00:00', '15:00:00');
+INSERT INTO base_info.meeting_serv(meeting_id, mt_name, mt_date, mt_st_time, mt_fn_time) values('MT4','주간보고', '2017-08-06', '08:00:00', '10:00:00');
+INSERT INTO base_info.meeting_serv(meeting_id, mt_name, mt_date, mt_st_time, mt_fn_time) values('MT5','주간보고', '2017-08-06', '08:00:00', '12:00:00');
+
+INSERT INTO base_info.user_mt_connect(USER_ID, MEETING_ID, IS_HOST) values('ABC','MT1', 0);
+INSERT INTO base_info.user_mt_connect(USER_ID, MEETING_ID, IS_HOST) values('TEST', 'MT1', 1);
+
+COMMIT;
