@@ -1,0 +1,29 @@
+﻿mySQL / mySQL WorkBench 설치
+
+<기본 유저 생성> - Root 계정 비밀번호 : 1234
+username = group1
+password = 1234
+
+(일단 Root에서 DBA권한으로 작업하는게 좋을 것 같습니다.)
+
+<Schema 생성 및 Insert DB 생성> - mySQL WorkBench에서 작업
+1. base_info / analysis_info Schema 생성
+2. base_info에 mySQL_BASE_INFO_SQL.txt의 Query문 실행.
+3. analysis_info에 mySQL_ANALYSIS_INFO_SQL.txt의 Query문 실행.
+4. mySQL_BASE_DATA / mySQL_ANALYSIS_DATA Query 실행.
+
+(여러 쿼리문 일괄실행 단축키 : ctrl + shift + enter)
+
+-----------------------------------------------------------
+<pom.xml Dependency 추가>
+	<dependency>
+		<groupId>org.mybatis.spring.boot</groupId>
+		<artifactId>mybatis-spring-boot-starter</artifactId>
+		<version>1.3.0</version>
+	</dependency>
+
+	<dependency>
+		<groupId>mysql</groupId>
+		<artifactId>mysql-connector-java</artifactId>
+		<version>6.0.4</version>
+	</dependency>
