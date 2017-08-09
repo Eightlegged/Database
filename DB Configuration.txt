@@ -27,3 +27,10 @@ username = group1 / password = 1234
 	</dependency>
 	
 ---------------------------------------------------------------------
+<application.properties>
+
+#database1
+spring.datasource.driverClassName=com.mysql.cj.jdbc.Driver
+spring.datasource.url=jdbc:mysql://localhost:3306/base_info?serverTimezone=UTC&useSSL=false
+spring.datasource.username=root
+spring.datasource.password=1234
